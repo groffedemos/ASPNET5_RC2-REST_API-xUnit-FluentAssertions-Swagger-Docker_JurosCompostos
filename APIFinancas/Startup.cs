@@ -26,7 +26,7 @@ namespace APIFinancas
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = $"APIFinancas - Instância: {Environment.MachineName}",
-                    Version = "v1"
+                    Version = "v2"
                 });
             });
         }
