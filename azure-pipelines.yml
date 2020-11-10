@@ -58,3 +58,8 @@ stages:
         tags: |
           $(tag)
           latest
+    - task: AzureWebAppContainer@1
+      inputs:
+        azureSubscription: 'Microsoft Azure Sponsorship(f3e7d90b-efba-4481-ac3d-d8df26b6235d)'
+        appName: 'groffefinancas'
+        containers: '$(dockerRegistryServiceConnection)/$(imageRepository):$(tag)'
